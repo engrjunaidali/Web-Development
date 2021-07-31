@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    width: 100%; height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('images/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%; height: 10vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    text-transform: uppercase;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1));   
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;   
+}
+
+nav .logo{
+    color: rgb(255, 255, 255);
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    padding: 12px 30px;
+    transition: 1s;
+    
+}
+
+.current{
+    border-bottom: 1px white solid;
+    background: white;
+    background: #00b894;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+nav .menu a:hover{
+    border-bottom: 1px white solid;
+    background: white;
+    background: #00b894;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+main{
+    width: 100%;    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+
+    text-shadow: 1px 1px 2px black;   
+}
+
+section h1{
+    margin: 30px 0 20px 0px;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Buttons */
+
+section a{
+    padding: 12px 30px;
+    margin: 1px 10px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section .btn-learn-more{
+    background: #fff;
+    color: #000;
+}
+
+section .btn-learn-more:hover{
+    background: #fff;
+    color: #00b894;
+    transition: 0.5s;
+}
+
+
+
+section .btn-sign-up{
+    background: #00b894;
+    color: #fff;
+}
+
+/* Animation */
+
+.change_content:after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{content:"Dubai"}
+    20%{content:"Berlin"}
+    40%{content:"Oslo"}
+    60%{content:"Denvour"}
+    80%{content:"New York"}
+    100%{content:"Shar Jaa"}
+
+    
+}
+
+
+
